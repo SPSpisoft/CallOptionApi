@@ -375,6 +375,7 @@ namespace CallOptionApi_V3.Controllers
         {
             var bulk = new BulkOperations();
 
+
             var ret = bulk.Setup<AppClasses.TradeLastDayOptionData>(x => x.ForCollection(data))
                 .WithTable(AppVariable.Tbl_TradeDayOption)
                 .AddAllColumns()
